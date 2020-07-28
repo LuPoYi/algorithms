@@ -22,7 +22,7 @@ const resolveJavaType = (symbol) => {
   subClasses = symbol.slice(firstIndex + 1, lastIndex)
   subClasses.split(',').forEach(function (item) {
     if (item.indexOf("<") != -1) {
-      arr.push(resolveJavaType(item))
+      arr.push(resolveJavaType(item)) // recursion
     } else {
       arr.push(item.replace(/\s/g, ''));
     }

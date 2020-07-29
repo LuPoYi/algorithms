@@ -1,4 +1,4 @@
-// Complete the maximumToys function below.
+// k = budget, try to buy more toys
 function maximumToys(prices, k) {
   // 1 12 5 111 200 1000 10
   // => 4 , (k = 50)
@@ -21,3 +21,5 @@ function maximumToys(prices, k) {
 
   return count
 }
+
+console.log(maximumToys([1, 12, 5, 111, 200, 1000, 10], 50))

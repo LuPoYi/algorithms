@@ -1,15 +1,14 @@
-// Complete the minimumSwaps function below.
 function minimumSwaps(arr) {
     let ans = []
     let count = 0
     let value = 0
     let len = arr.length
 
-    while(len != value){
+    while (len != value) {
         value = value + 1
-        if(arr[0] == value){
+        if (arr[0] == value) {
             arr.shift()
-        }else{
+        } else {
             arr[arr.indexOf(value)] = arr[0] // < key
             arr.shift()
             count = count + 1
@@ -28,4 +27,4 @@ function minimumSwaps(arr) {
     return count
 }
 
-console.log(minimumSwaps([2,3,4,1,5]))
+console.log(minimumSwaps([2, 3, 4, 1, 5]))

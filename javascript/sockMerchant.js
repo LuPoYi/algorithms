@@ -5,7 +5,7 @@ function sockMerchant(n, ar) {
     var match_index = ar.indexOf(item)
     if (match_index != -1) {
       count++
-      ar.splice(match_index, 1)
+      ar.splice(match_index, 1) // remove match index
     }
   }
   return count

@@ -7,7 +7,7 @@ function checkMagazine(magazine, note) {
 
   for (let i = 0; i < note.length; i++) {
     let index = magazine.indexOf(note[i])
-    magazine.splice(index, 1);
+    magazine.splice(index, 1)
     if (index == -1) {
       is_ok = false;
       break;
@@ -16,3 +16,6 @@ function checkMagazine(magazine, note) {
 
   return is_ok ? "Yes" : "No"
 }
+
+console.log(checkMagazine(['give', 'me', 'one', 'grand', 'today', 'night'], ['give', 'one', 'grand', 'today']
+))

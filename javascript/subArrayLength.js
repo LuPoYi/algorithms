@@ -27,4 +27,4 @@ function maxLength(a, k) {
 
 }
 
-maxLength([3, 1, 2, 1], 4)
+maxLength([3, 1, 2, 1], 4) // => 3
